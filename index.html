@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Handson-1</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h3> 1). Write the code to access element which is having id as "text" ?</h3>
+        <p> => document.getElementById('text');</p> <hr>
+
+    <h3> 2). Write the code to access element which is having tag as "h1" ?h3>
+        <p>=> document.getElementsByTagName('h1');</p>  <hr> 
+
+    <h3> 3).Write the code to access element which is having class as "box" ?</h3>    
+        <p>=> document.getElementsByClassName('box')</p> <hr>
+
+    <h3> 4).Change the heading from ""Hello"" to ""Hello World"" using DOM functions"</h3>    
+    <h1 id="changeText">Hello </h1>
+    <button onclick="changeText()">ChangeText</button><hr>
+
+    <h3> 5). Create an HTML page having content as Hello world and a button named Replace Text. When user will click on this button page content should be changed to "Welcome to Elevation academy" ?</h3>
+        <p> => <a href="./index2.html">Go to page</a></p><hr>
+
+
+    <h3> 6). Add one style attribute and give text color as red and id attribute and give the id value as ""heading"" in the above given h1 tag using DOM functions" ?</h3>    
+    <h1 id="ChangeStyle">Hello </h1> 
+        <button onclick="ChangeStyle()">ChangeStyle</button> <hr>
+
+    <h3> 7). Create three cards on HTML page and arrange them using flex property in row or horizontal direction and also create button at the bottom named "Change Flex direction". When user clicks on this button, the cards arrangement should be changed to vertical direction.</h3>    
+    <div class="cardContainer">
+        <div class="cards"><p>Card1</p></div>
+        <div class="cards"><p>Card2</p></div>
+        <div class="cards"><p>Card3</p></div>
+    </div>
+    <button onclick="changeDirection()">changeDirection</button>
+    <hr>
+
+    <h3> 8). What is the difference between window vs document?</h3>
+    <p>Window is the currentwindow open in the browser whereas the term document represents th HTML document on which DOM functioality is to be applied.</p>
+    <hr>
+
+    <h3>Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second</h3>
+    <p id="time"></p>
+    <script src="./script.js"></script>
+</body>
+</html>
